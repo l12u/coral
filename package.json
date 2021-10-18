@@ -19,7 +19,6 @@
         "size": "size-limit",
         "analyze": "size-limit --why"
     },
-    "peerDependencies": {},
     "husky": {
         "hooks": {
             "pre-commit": "tsdx lint"
@@ -28,7 +27,8 @@
     "prettier": {
         "printWidth": 80,
         "semi": true,
-        "singleQuote": true,
+        "singleQuote": false,
+        "tabWidth": 4,
         "trailingComma": "es5"
     },
     "name": "coral",
@@ -51,5 +51,9 @@
         "tsdx": "^0.14.1",
         "tslib": "^2.3.1",
         "typescript": "^4.4.4"
+    },
+    "dependencies": {
+        "tiny-invariant": "^1.1.0",
+        "tiny-warning": "^1.0.3"
     }
 }
